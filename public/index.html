@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>360Repo:Automatic test script status details</title>
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<script src="js/angular.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<div class="page-header">
+	<h1>ReportFX</h1>
+</div>
+
+<style>
+	table, th , td  {
+		border: 2px solid grey;
+		border-collapse: collapse;
+		padding: 7px;
+	}
+	table tr:nth-child(odd)	{
+		background-color: #f1f1f1;
+	}
+	table tr:nth-child(even) {
+		background-color: #ffffff;
+	}
+</style>
+
+<body ng-app="reportApp">
+	<div class="container" ng-controller="reportAPP">
+		<table class = "table table-striped">
+			<thead>
+			<tr>
+				<th>TestCaseNumber</th>
+				<th>TestCaseName</th>
+				<th>Description</th>
+				<th>Computer/Device?</th>
+				<th>Pass/Fail?</th>
+				<th>Browser?</th>
+				<th>BrowserVersion?</th>
+				<th>Error/Exception?</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="testcase in testcases">
+				<td>1</td>
+				<td>Login_SignalFx</td>
+				<td>Log into SignalFX application</td>
+				<td>MacOS</td>
+				<td>Pass</td>
+				<td>Chrome</td>
+				<td>10</td>
+				<td>No Exception</td>
+
+			</tr>
+			</tbody>
+		</table>
+
+
+	</div>
+
+
+
+</body>
+</html>
